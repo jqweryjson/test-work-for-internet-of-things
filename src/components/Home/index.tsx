@@ -1,5 +1,13 @@
+import { Container } from '@mui/material'
 import * as React from 'react'
+import { Form } from '../Form'
 
-const Home: React.FC = () => <div>ДОМ</div>
+import schema from '../../schema.json'
+
+const Home: React.FC = () => (
+  <Container>
+    <Form schema={schema} />
+  </Container>
+)
 
 export { Home }

@@ -1,0 +1,74 @@
+{
+  "ui:page": {
+    "props": {
+      "ui:schemaErrors": true
+    }
+  },
+  "streetAddress": {
+    "ui:widget": "input",
+    "ui:emptyValue": ""
+  },
+  "city": {
+    "ui:widget": "input",
+    "ui:emptyValue": ""
+  },
+  "state": {
+    "ui:widget": "input",
+    "ui:emptyValue": ""
+  },
+  "gender": {
+    "ui:widget": "radio",
+    "ui:options": {
+      "row": true
+    }
+  },
+  "phones": {
+    "ui:validations": {
+      "maxItems": {
+        "value": 3,
+        "message": "'Password' must be at least 3 characters",
+        "inline": true
+      },
+      "maxLength": {
+        "value": 10,
+        "message": "'Password' must be at least 3 characters",
+        "inline": true
+      }
+    },
+    "items": {
+      "ui:validations": {
+        "maxLength": {
+          "value": 10,
+          "message": "'Password' must be at least 3 characters",
+          "inline": true
+        }
+      }
+    }
+  },
+  "parents": {
+    "ui:options": {
+      "canReorder": true
+    },
+    "items": {
+      "relation": {
+        "ui:widget": "radio",
+        "ui:options": {
+          "row": true
+        }
+      },
+      "age": {
+        "ui:widget": "updown"
+      },
+      "grandFather": {
+        "age": {
+          "ui:widget": "updown"
+        }
+      },
+      "grandMother": {
+        "age": {
+          "ui:widget": "updown"
+        }
+      }
+    }
+  }
+}

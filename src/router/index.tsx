@@ -1,16 +1,8 @@
 import * as React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-
-import { Home } from '../components/Home'
-import { Signup } from '../components/Signup'
-import { PrivateRoute } from './PrivateRoute'
+import { BrowserRouter } from 'react-router-dom'
 
 const Router = () => {
-  return (
-    <BrowserRouter>
-
-    </BrowserRouter>
-  )
+  return <BrowserRouter />
 }
 
 export { Router }

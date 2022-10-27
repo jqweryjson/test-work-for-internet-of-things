@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "title": "User info",
+  "properties": {
+    "streetAddress": {
+      "type": "string",
+      "title": "StreetAddress"
+    },
+    "city": {
+      "type": "string",
+      "title": "City",
+      "maxLength": 10
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "gender": {
+      "type": "string",
+      "title": "Gender",
+      "enum": ["male", "female", "else"]
+    },
+    "phones": {
+      "type": "array",
+      "title": "Phones",
+      "maxItems": 3,
+      "minItems": 1,
+      "items":
+        {
+          "title": "Phone",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 255
+        }
+    },
+    "parents": {
+      "type": "array",
+      "title": "Parents",
+      "minItems": 0,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "relation": {
+            "type": "string",
+            "title": "relation",
+            "enum": ["mother", "father"]
+          },
+          "age": {
+            "title": "age",
+            "type": "integer"
+          },
+          "name": {
+            "title": "name",
+            "type": "string"
+          },
+          "secondName": {
+            "title": "secondName",
+            "type": "string"
+          },
+          "grandFather": {
+            "title": "GrandFather",
+            "type": "object",
+            "properties": {
+              "name": {
+                "title": "name",
+                "type": "string"
+              },
+              "age": {
+                "title": "age",
+                "type": "integer"
+              },
+              "secondName": {
+                "title": "secondName",
+                "type": "string"
+              },
+              "retired": {
+                "title": "retired",
+                "type": "boolean"
+              }
+            }
+          },
+          "grandMother": {
+            "title": "GrandMother",
+            "type": "object",
+            "properties": {
+              "name": {
+                "title": "name",
+                "type": "string"
+              },
+              "age": {
+                "title": "age",
+                "type": "integer"
+              },
+              "secondName": {
+                "title": "secondName",
+                "type": "string"
+              },
+              "retired": {
+                "title": "retired",
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["streetAddress", "city", "state"]
+}

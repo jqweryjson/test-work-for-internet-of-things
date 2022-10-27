@@ -2,12 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 
-// import { createBrowserHistory } from 'history'
 import { App } from './App'
 import reportWebVitals from './reportWebVitals'
-
-// создаём кастомную историю
-// const history = createBrowserHistory()
 
 ReactDOM.render(
   <React.StrictMode>
