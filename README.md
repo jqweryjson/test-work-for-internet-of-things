@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Старт
 
 В Диретории с проектом `npm i`
 После установки `npm start`
