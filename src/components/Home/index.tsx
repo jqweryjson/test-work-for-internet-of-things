@@ -4,10 +4,12 @@ import { Form } from '../Form'
 
 import schema from '../../schema.json'
 
-const Home: React.FC = () => (
-  <Container>
-    <Form schema={schema} />
-  </Container>
-)
+const Home: React.FC = () => {
+  return (
+    <Container>
+      <Form schema={schema} />
+    </Container>
+  )
+}
 
 export { Home }

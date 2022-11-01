@@ -5,17 +5,25 @@ import type { FC } from 'react'
 import React from 'react'
 import MaterialJsonSchemaForm from 'react-jsonschema-form-material-ui'
 
-import uiSchema from '../../uiSchema.json'
 import givenFormData from '../../givenFormData.json'
 
 import { MySchema } from '../../types'
+import { getUiSchema, isValidForm } from '../../utils'
 
 interface Props {
-  schema: MySchema
+  schema: MySchema | any
 }
 
 export const Form: FC<Props> = React.memo(({ schema }) => {
   const [formData, setFormData] = React.useState(givenFormData)
+  const uiSchema = getUiSchema(schema)
+  console.log(uiSchema)
+
+  const onSubmit = (value: any) => {
+    if (isValidForm(value)) {
+      alert('it`s okay')
+    } else alert('not ok')
+  }
 
   return (
     <MaterialJsonSchemaForm
@@ -29,7 +37,7 @@ export const Form: FC<Props> = React.memo(({ schema }) => {
         setFormData(formData)
       }}
       // eslint-disable-next-line no-alert
-      onSubmit={() => alert('form submitted')}
+      onSubmit={onSubmit}
     />
   )
 })

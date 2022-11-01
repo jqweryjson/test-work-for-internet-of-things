@@ -1,7 +1,7 @@
 {
   "name": "react-ts-ql",
   "version": "0.1.0",
-  "homepage": "https://jqweryjson.github.io/test-work-for-internet-of-things",
+  "homepage": "https://jqweryjson.github.io/test-work-for-internet-of-things/#",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -18,10 +18,9 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
-    "bootstrap": "^4.5.3",
+    "lodash": "^4.17.21",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-jsonschema-form-material-ui": "^3.0.0-rc.9",
     "react-router-dom": "^5.2.0",
@@ -55,10 +54,9 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.2.0"
+    "@types/lodash": "^4.14.186",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.7.1"
   }
 }

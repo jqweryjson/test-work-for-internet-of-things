@@ -51,3 +51,11 @@ export interface MySchema {
       ]
   [k: string]: unknown
 }
+
+export const UI_SCHEMA_TEMPLATE = {
+  'ui:page': {
+    props: {
+      'ui:schemaErrors': true,
+    },
+  },
+}

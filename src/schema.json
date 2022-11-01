@@ -4,7 +4,7 @@
   "properties": {
     "streetAddress": {
       "type": "string",
-      "title": "StreetAddress"
+      "title": "StreetA0ddress"
     },
     "city": {
       "type": "string",

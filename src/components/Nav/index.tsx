@@ -6,10 +6,18 @@ export const Nav = () => {
   return (
     <div role="presentation">
       <Breadcrumbs aria-label="breadcrumb">
-        <Link underline="hover" color="inherit" href="/">
+        <Link
+          underline="hover"
+          color="inherit"
+          href="/test-work-for-internet-of-things/#"
+        >
           Form
         </Link>
-        <Link underline="hover" color="inherit" href="/dashboard">
+        <Link
+          underline="hover"
+          color="inherit"
+          href="/test-work-for-internet-of-things/#/dashboard"
+        >
           Dashboard
         </Link>
       </Breadcrumbs>
