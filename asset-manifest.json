@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/test-work-for-internet-of-things/static/js/main.8c77dab6.chunk.js",
-    "main.js.map": "/test-work-for-internet-of-things/static/js/main.8c77dab6.chunk.js.map",
+    "main.js": "/test-work-for-internet-of-things/static/js/main.f70baf66.chunk.js",
+    "main.js.map": "/test-work-for-internet-of-things/static/js/main.f70baf66.chunk.js.map",
     "runtime-main.js": "/test-work-for-internet-of-things/static/js/runtime-main.e28b3989.js",
     "runtime-main.js.map": "/test-work-for-internet-of-things/static/js/runtime-main.e28b3989.js.map",
     "static/js/2.258284c5.chunk.js": "/test-work-for-internet-of-things/static/js/2.258284c5.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.e28b3989.js",
     "static/js/2.258284c5.chunk.js",
-    "static/js/main.8c77dab6.chunk.js"
+    "static/js/main.f70baf66.chunk.js"
   ]
 }
